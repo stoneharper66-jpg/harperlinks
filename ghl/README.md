@@ -1,6 +1,8 @@
 # Putting the HarperLinks design into GoHighLevel
 
-Your sub-account: `VOpN6XsVEOzlzpC54LhG`
+Your sub-account id is the long string in your GHL dashboard URL:
+`app.gohighlevel.com/v2/location/<YOUR_LOCATION_ID>/dashboard`
+Keep it out of public code — it identifies your account.
 
 `PASTE-INTO-GHL.html` is the entire HarperLinks site as **one block you can paste**.
 The logo is embedded in the file, so there is nothing to upload to the media library.
@@ -73,7 +75,7 @@ It's shown **once only**. If you lose it you make a new one.
 With that token the API is:
 - Base: `https://services.leadconnectorhq.com`
 - Headers: `Authorization: Bearer <token>` and `Version: 2021-07-28`
-- Create/update a contact: `POST /contacts/upsert` with `locationId: "VOpN6XsVEOzlzpC54LhG"`
+- Create/update a contact: `POST /contacts/upsert` with `locationId: "<YOUR_LOCATION_ID>"`
 
 Give me the token and I can wire the HarperLinks bot to drop every lead and booking
 straight into your GHL CRM.
